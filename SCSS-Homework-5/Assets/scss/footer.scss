@@ -1,0 +1,118 @@
+footer{
+    background-color: #52503B;
+    padding: 100px;
+    color: white;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        h5{
+            font-size: 0.9em; 
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            a{
+                font-size: 0.9em;
+                &:hover{
+                    color: #E08631;
+                }
+            }
+        }
+        .links{
+            h5{
+                margin-bottom: 20px;
+            }
+            .icons{
+                display: flex;
+                gap: 18px;
+                justify-content: center;
+                i{
+                    font-size: 32px;
+                    color: white;
+                    &:hover{
+                        color: #E08631;
+                    }
+                }
+            }
+        }
+        .form{
+            width: 49%;
+            h5{
+                margin-bottom: 2px;
+            }
+            p{
+                font-size: 0.9em;
+                margin-bottom: 9px;
+                color: white;
+            }
+            form{
+                position: relative;
+                input{
+                    padding: 15px 30px;
+                    color: #52503B;
+                    border: 1px solid #E5E7EB;
+                    border-radius: 9px;
+                    width: 100%;
+                }
+                button{
+                    padding: 5px;
+                    position: absolute;
+                    right: 11px;
+                    top: 9px;
+                    border-radius: 14px;
+                }
+            }
+        }
+        @media(max-width:820px){
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+            text-align: center;
+            .form{
+                width: 75%;
+                order: 1;
+            }
+            ul{
+                order: 2;
+            }
+            .links{
+                order: 3;
+            }
+        }
+        @media(max-width:620px){
+            .form{
+                width: 90%;
+            }
+        }
+        @media(max-width:480px){
+            .form{
+                width: 100%;
+            }
+        }
+    }
+    .bottom{
+        text-align: center;
+        color: white;
+        margin-top: 48px;
+        .image{
+            width: 200px;
+            height: 70px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .tel{
+            margin-top: 20px;
+        }
+        a{
+            font-weight: 400;
+            font-size: 0.9em;
+            &:hover{
+                color: #E08631;
+            }
+        }
+    }
+}

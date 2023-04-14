@@ -1,0 +1,120 @@
+.carts2{
+    padding: 130px;
+    color: #52503B;
+    h2{
+        font-weight: 400;
+        font-size: 2em;
+        position: relative;
+        margin-bottom: 14px;
+        &::before{
+            content: '';
+            width: 42px;
+            height: 8px;
+            background-color: #E08631;
+            position: absolute;
+            top: -33px;
+            left: 0;
+        }
+    }
+    &>p{
+        width: 554px;
+    }
+    @media(max-width:660px){
+        &>p{
+            width: 100%;
+        } 
+    }
+}
+.cart21{
+    .boxes{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        .box{
+            width: 49%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        section{
+            display: flex;
+            gap: 16px;
+            .image{
+                width: 36px !important;
+                height: 36px !important;
+            }
+            .text{
+                width: calc(100% - 52px);
+            }
+            h5{
+                font-size: 0.9em;
+                font-weight: 400;
+            }
+            p{
+                font-size: 0.9em;
+                color: #333333;
+            }
+        }
+    }
+    @media(max-width:660px){
+        .boxes{
+            flex-direction: column;
+            gap: 40px;
+            .box{
+                width: 100%;
+            }
+        }
+    }
+}
+.cart22{
+    display: flex;
+    justify-content: space-between;
+    .left{
+        width: calc(96% - 540px);
+        align-self: flex-end;
+    }
+    .image{
+        width: 36px;
+        height: 36px;
+    }
+    .right{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        row-gap: 50px;
+        width: 540px;
+        .box{
+            display: flex;
+            gap: 16px;
+        }
+        p{
+            color: #333333;
+            width: 203px;
+        }
+    }
+    @media(max-width:1200px){
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        .left{
+            width: 514px;
+            text-align: center;
+            margin: auto;
+            h2{
+                &::before{
+                    left: calc(50% - 21px);
+                }
+            }
+        }
+    }
+    @media(max-width:620px){
+        .left{
+            width: 100%;
+        }
+        .right{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
